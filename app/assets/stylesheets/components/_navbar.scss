@@ -1,11 +1,26 @@
-.navbar-lewagon {
+nav {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+nav img {
+  width: 60px;
+  margin: 6px;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.nav-link {
+  color: $white;
+  margin-right: 16px;
+  transition: 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+  color: $light-violet;
+  border-bottom: 2px solid $white;
+}
+
+.menu {
+  display: flex;
 }
