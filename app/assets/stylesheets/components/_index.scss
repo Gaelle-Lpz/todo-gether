@@ -40,10 +40,11 @@ a {
 body {
   background-color: $bg-dark;
   color: $white;
+  font-family: $body-font;
 }
 
 /* ---------------- font-family && font-size ---------------*/
 
 h1 {
-  font-size: 4vw;
+  font-size: vw;
 }
