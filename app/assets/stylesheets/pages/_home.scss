@@ -2,5 +2,39 @@
 
 .title {
   color: $light-violet;
-  font-size: 8vw;
+  font-size: 5vw;
+}
+
+.title-container {
+  margin: 15vh 5vh 15vh 5vh;
+}
+
+.button-home {
+  display: block;
+  margin-top: 10vh;
+  margin-left: 10vh;
+  width: 200px;
+  text-align: center;
+}
+
+.img-home {
+  margin-top: 10vh;
+  width: 500px;
+  height: 500px;
+}
+
+@media (max-width: 1000px) {
+  .img-home {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+  .container-flex {
+    display: block;
+  }
+  .button-home {
+    width: 100%;
+    margin: 5vh 0 0 0;
+  }
 }

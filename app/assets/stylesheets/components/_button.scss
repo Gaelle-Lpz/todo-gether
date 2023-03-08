@@ -1,6 +1,14 @@
 .button-primary {
   background-color: $light-violet;
   color: $white;
-  padding: 16px 32px 16px 32px;
+  padding: 16px 24px 16px 24px;
   border-radius: 20px;
+  border: 5px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.button-primary:hover {
+  background-color: $white;
+  color: $violet;
+  border: 5px solid $light-violet;
 }
