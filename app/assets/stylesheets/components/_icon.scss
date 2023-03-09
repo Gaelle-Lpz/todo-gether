@@ -1,0 +1,15 @@
+.hand {
+  font-size: 32px;
+  animation: waving 0.60s linear infinite;
+  animation-direction: alternate-reverse;
+  padding: 16px;
+}
+
+@keyframes waving {
+  from {
+      transform: rotate(40deg);
+  }
+  to {
+      transform: rotate(-10deg);
+  }
+}
