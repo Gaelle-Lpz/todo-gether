@@ -12,3 +12,24 @@
   color: $violet;
   border: 5px solid $light-violet;
 }
+
+.button-sign {
+  width: 100%;
+  background-color: $violet;
+  padding: 12px;
+  border-radius: 20px;
+  color: $white;
+  border: 1px solid $light-violet;
+}
+
+.button-sign:hover {
+  background-color: $light-violet;
+}
+
+.devise-link {
+  color: $white;
+}
+
+.devise-link:hover {
+  color: $violet;
+}

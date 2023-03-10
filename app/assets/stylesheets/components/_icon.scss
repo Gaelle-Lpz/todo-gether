@@ -3,6 +3,9 @@
   animation: waving 0.60s linear infinite;
   animation-direction: alternate-reverse;
   padding: 16px;
+  width: 80px;
+  justify-content: center;
+  text-align: center;
 }
 
 @keyframes waving {
