@@ -6,5 +6,5 @@ class User < ApplicationRecord
 
   has_many :team_member
   validates :name, uniqueness: true
-  validates :email, format: { with: /\A.*@.*\.com\z/ }
+  validates :email, uniqueness: true
 end
