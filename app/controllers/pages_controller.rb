@@ -3,4 +3,8 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def dashboard
+    @team_member = TeamMember.find_by(user: current_user)
+  end
 end
