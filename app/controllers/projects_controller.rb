@@ -9,6 +9,7 @@ class ProjectsController < ApplicationController
   end
 
   def show
+    @tasks = Task.joins(:project).where(projects: { id: @project })
   end
 
   def create

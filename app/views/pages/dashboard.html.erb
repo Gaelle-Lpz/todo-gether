@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Hello <%= current_user.name %></h1>
+  <h3>You have <%= @tasks_pending.count%> task pending</h3>
+
+  <h2>Your projects :</h2>
+  <ul>
+    <% @projects.each do |project| %>
+      <li><%= link_to project.name, project_path(project)  %></li>
+    <% end %>
+  </ul>
+  <%= link_to "View All", projects_path %>
+
+
+  <h2>Your Tasks :</h2>
+  <ul>
+    <% @tasks.each do |task| %>
+      <li><%= task.title %></li>
+    <% end %>
+  </ul>
+</div>

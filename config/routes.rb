@@ -6,5 +6,13 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  get "tasks", to: "tasks#index"
+  # pages
+  get "dashboard", to: "pages#dashboard"
+
+
+  # projects
+  resources :projects do
+    # tasks
+    resources :tasks
+  end
 end

@@ -1,0 +1,11 @@
+<!--TODO add member team / display team member-->
+
+<%= @project.name %>
+
+<ul>
+  <% @tasks.each do |task| %>
+    <li><%= task.title %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Create Task", new_project_task_path(@project) %>
