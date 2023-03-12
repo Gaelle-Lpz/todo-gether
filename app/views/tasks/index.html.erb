@@ -3,9 +3,12 @@
   <h3>You have <%= @tasks_pending.count%> task pending</h3>
 
   <h2>Your projects :</h2>
+  <ul>
     <% @projects.each do |projet| %>
       <li><%= projet.name %></li>
     <% end %>
+  </ul>
+
 
   <h2>Your Tasks :</h2>
   <ul>
