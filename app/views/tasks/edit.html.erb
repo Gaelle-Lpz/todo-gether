@@ -1,0 +1,7 @@
+<%= simple_form_for @task do |f| %>
+  <%= f.input :title, disabled: false %>
+  <%= f.input :detail, disabled: false %>
+  <%= f.input :date, as: :date %>
+  <%= f.input :status, as: :radio_buttons, collection: [['pending', 'pending'], ['in_progress', 'in progress'], ['completed', 'completed'], ['late', 'late'], ['paused', 'paused']], label_method: :second, value_method: :first %>
+  <%= f.button :submit %>
+<% end %>
