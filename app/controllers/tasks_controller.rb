@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
   before_action :set_task, only: %i[show edit update destroy]
+  before_action :set_project, only: %i[new create]
 
   def index
     @tasks = Task.all
@@ -9,12 +10,10 @@ class TasksController < ApplicationController
   end
 
   def new
-    @project = Project.find(params[:project_id])
     @task = Task.new
   end
 
   def create
-    @project = Project.find(params[:project_id])
     @task = Task.new(task_params)
     @task.project = @project
     @task.save
@@ -41,5 +40,9 @@ class TasksController < ApplicationController
 
   def set_task
     @task = Task.find(params[:id])
+  end
+
+  def set_project
+    @project = Project.find(params[:project_id])
   end
 end
