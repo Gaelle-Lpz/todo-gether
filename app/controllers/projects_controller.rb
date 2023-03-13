@@ -11,6 +11,7 @@ class ProjectsController < ApplicationController
 
   def show
     @tasks = Task.joins(:project).where(projects: { id: @project })
+    @users = User.joins(team_members: { member_tasks: { task: :project } }).where(tasks: { project_id: @project.id }).distinct
   end
 
   def create
