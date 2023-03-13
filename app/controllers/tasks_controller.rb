@@ -26,12 +26,11 @@ class TasksController < ApplicationController
 
   def update
     @task.update(task_params)
-    redirect_to task_path(@task)
   end
 
   def destroy
     @task.destroy
-    redirect_to tasks_path, status: :see_other
+    redirect_to project_path(@task.project), status: :see_other
   end
 
   private
