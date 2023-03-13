@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   # pages
   get "dashboard", to: "pages#dashboard"
-
+  get "profile/:id", to: "pages#profile", as: 'user_profile'
 
   # projects
   resources :projects do
