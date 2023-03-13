@@ -18,7 +18,6 @@ class TasksController < ApplicationController
     @task = Task.new(task_params)
     @task.project = @project
     @task.save
-    raise
     redirect_to project_path(@project)
   end
 
